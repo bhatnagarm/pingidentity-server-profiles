@@ -1,5 +1,5 @@
 define suffix=${USER_BASE_DN}
-define maildomain=example.com
+define maildomain=techartworks.com
 define numusers=${MAKELDIF_USERS}
 
 branch: ou=benchy,[suffix]
@@ -9,9 +9,15 @@ template: benchy
 rdnAttr: uid
 objectClass: top
 objectClass: person
-objectClass: uidObject
+objectClass: organizationalPerson
+objectClass: ciamIdentity
 uid: benchy.<sequential:0>
+givenName: ciam
 sn: user
 cn: benchmark
+loginAlias: {uid}
 userPassword: 2FederateM0re
-description: This is the description for {uid}
+primaryEmail: mitul@mailinator.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE

@@ -1,11 +1,26 @@
-dn: ${USER_BASE_DN}
-objectClass: top
-objectClass: domain
-dc: example
+###### Root CIAM Object. This is the tree that customer identities as well as service/functional accounts will authenticate and be authorised against and where those objects will reside.
+dn: o=com
+changetype: add
+objectclass: top
+objectclass: organization
+o: com
 aci: (targetattr!="userPassword")(version 3.0; acl "Allow anonymous read access for anyone"; allow (read,search,compare) userdn="ldap:///anyone";)
 aci: (targetattr="*")(version 3.0; acl "Allow users to update their own entries"; allow (write) userdn="ldap:///self";)
 
-dn: ou=people,${USER_BASE_DN}
-objectClass: top
-objectClass: organizationalUnit
-ou: people
+dn: ou=techartworks,o=com
+changetype: add
+objectclass: top
+objectclass: organizationalUnit
+ou: techartworks
+
+dn: ou=Users,ou=techartworks,o=com
+changetype: add
+objectclass: top
+objectclass: organizationalUnit
+ou: Users
+
+dn: ou=ServiceAccounts,ou=techartworks,o=com
+changetype: add
+objectclass: top
+objectclass: organizationalUnit
+ou: ServiceAccounts
