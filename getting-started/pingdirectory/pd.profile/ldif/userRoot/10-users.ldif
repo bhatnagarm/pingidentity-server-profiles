@@ -1,288 +1,44 @@
-dn: uid=0000411212,ou=Users,ou=techartworks,o=com
-changetype: add
+dn: uid=user.0,ou=people,${USER_BASE_DN}
 objectClass: top
 objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 0000411212
-givenName: CIAM
-sn: TESTING
-cn: VJFRXUFKSFIIII MJYMYCNXUQ
-loginAlias: 0000411212
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
+objectClass: uidObject
+sn: Brooke
+cn: Raeann Brooke
+uid: user.0
+userPassword: 2FederateM0re
 
-dn: uid=1406376934,ou=Users,ou=techartworks,o=com
-changetype: add
+dn: uid=user.1,ou=people,${USER_BASE_DN}
 objectClass: top
 objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406376934
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406376934
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
+objectClass: uidObject
+sn: Seawell
+cn: Esko Seawell
+uid: user.1
+userPassword: 2FederateM0re
 
-dn: uid=1406286100,ou=Users,ou=techartworks,o=com
-changetype: add
+dn: uid=user.2,ou=people,${USER_BASE_DN}
 objectClass: top
 objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406286100
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406286100
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
+objectClass: uidObject
+sn: Tancordo
+cn: Sidonia Tancordo
+uid: user.2
+userPassword: 2FederateM0re
 
-dn: uid=1406286181,ou=Users,ou=techartworks,o=com
-changetype: add
+dn: uid=user.3,ou=people,${USER_BASE_DN}
 objectClass: top
 objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406286181
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406286181
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
+objectClass: uidObject
+sn: Knio
+cn: Pierre-Marc Knio
+uid: user.3
+userPassword: 2FederateM0re
 
-dn: uid=1406286201,ou=Users,ou=techartworks,o=com
-changetype: add
+dn: uid=user.4,ou=people,${USER_BASE_DN}
 objectClass: top
 objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406286201
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406286201
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406286223,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406286223
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406286223
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406287044,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406287044
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406287044
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406287845,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406287845
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406287845
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406287586,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406287586
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406287586
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406287426,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406287426
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406287426
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406285775,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406285775
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406285775
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406284906,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406284906
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406284906
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406287055,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406287055
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406287055
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406284052,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406284052
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406284052
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406288490,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406288490
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406288490
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406288506,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406288506
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406288506
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
-
-dn: uid=1406288565,ou=Users,ou=techartworks,o=com
-changetype: add
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: ciamIdentity
-uid: 1406288565
-givenName: CIAM
-sn: TESTING
-cn: CIAM TESTING
-loginAlias: 1406288565
-userPassword: Wonder@01
-primaryEmail: mitul@mailinator.com
-primaryMobile: +61481889848
-accountStatus: ACTIVE
-lockedAccount: FALSE
+objectClass: uidObject
+sn: Psutka
+cn: Terza Psutka
+uid: user.4
+userPassword: 2FederateM0re
