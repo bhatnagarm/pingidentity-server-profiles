@@ -1,0 +1,46 @@
+#
+# Structural class schema extension for Logical Data Model (LDM) Identity class.
+# This Schema file contains the information required to identity and manage a Virgin CIAM customer.
+#
+# Version 202207 (July 20, 2022)
+# ------------------------------------------------
+# OIDs Definition
+# 1.3.6.1.4.1.  Base OID
+#  28867.       PingIdentity IANA PEN
+#   100.        Application Identifer
+#   .1          Type Identifier
+#   .1          Object Identifier
+# ------------------------------------------------
+# Application Identifiers
+#   .100        Virgin CIAM
+# ------------------------------------------------
+# Type Identifiers
+# .1 - Attribute
+# .2 - ObjectClass
+# ------------------------------------------------
+# More on ldif file: https://www.tldp.org/HOWTO/LDAP-HOWTO/moreonldif.html
+
+dn: cn=schema
+objectClass: top
+objectClass: ldapSubentry
+objectClass: subschema
+#
+###################################################################################
+#
+# Declare the attributes before the AUXILIARY object class extension at the bottom.
+#
+###################################################################################
+#
+# AttributeTypes
+#
+attributeTypes: ( 1.3.6.1.4.1.28867.100.1.1 NAME 'middleName' DESC 'Persons middle name property' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications X-Origin 'Virgin CIAM Logical Data Model' )
+attributeTypes: ( 1.3.6.1.4.1.28867.100.1.2 NAME 'loginAlias' DESC 'Login alias for a preferred username property' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications X-Origin 'Virgin CIAM Logical Data Model' )
+attributeTypes: ( 1.3.6.1.4.1.28867.100.1.3 NAME 'primaryEmail' DESC 'CIAM customers primary email address property' EQUALITY caseIgnoreIA5Match SUBSTR caseIgnoreIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} X-ORIGIN 'RFC 4524' )
+attributeTypes: ( 1.3.6.1.4.1.28867.100.1.4 NAME 'primaryMobile' DESC 'CIAM customers primary mobile number property' EQUALITY telephoneNumberMatch SUBSTR telephoneNumberSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.50 X-ORIGIN 'RFC 4524' )
+attributeTypes: ( 1.3.6.1.4.1.28867.100.1.5 NAME 'accountStatus' DESC 'CIAM customer account status property' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 SINGLE-VALUE USAGE userApplications X-Origin 'Virgin CIAM Logical Data Model' )
+attributeTypes: ( 1.3.6.1.4.1.28867.100.1.6 NAME 'emailVerified' DESC 'CIAM customer email address verified confirmation property' EQUALITY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE USAGE userApplications X-Origin 'Virgin CIAM Logical Data Model' )
+attributeTypes: ( 1.3.6.1.4.1.28867.100.1.6 NAME 'lockedAccount' DESC 'CIAM status of account availability property' EQUALITY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE USAGE userApplications X-Origin 'Virgin CIAM Logical Data Model' )
+#
+# ObjectClasses
+#
+objectClasses: ( 1.3.6.1.4.1.28867.100.2.1 NAME 'ciamIdentity' DESC 'Structural class for customer identity in the CIAM Logical Data Model' SUP inetOrgPerson STRUCTURAL MUST ( accountStatus $ givenName $ sn $ cn $ userPassword $ uid $ primaryEmail $ lockedAccount) MAY ( middleName $ loginAlias $ primaryMobile $ emailVerified ) X-ORIGIN 'Virgin CIAM Logical Data Model' )

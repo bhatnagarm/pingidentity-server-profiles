@@ -1,0 +1,12 @@
+#
+# Ping Data Sync User For VA hosted Ping Datasync
+#
+dsconfig create-root-dn-user \
+    --user-name "Sync User"  \
+    --set "alternate-bind-dn:cn=Sync User"  \
+    --set inherit-default-root-privileges:false  \
+    --set privilege:bypass-pw-policy  \
+    --set privilege:config-read  \
+    --set privilege:password-reset  \
+    --set privilege:unindexed-search \
+    --set password:2FederateM0re

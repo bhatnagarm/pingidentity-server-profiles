@@ -1,0 +1,21 @@
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name loginAlias  \
+    --set index-type:equality  \
+    --set index-type:presence
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name primaryEmail  \
+    --set index-type:equality
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accountStatus  \
+    --set index-type:equality
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name lockedAccount  \
+    --set index-type:equality  \
+    --set index-type:presence

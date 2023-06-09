@@ -1,0 +1,19 @@
+#
+# Create the CIAM password password policy to use Salted SHA-512 as the password storage scheme.
+#
+dsconfig create-password-policy \
+    --policy-name ciamDefaultPasswordPolicy  \
+    --set "description:CIAM default platform password policy."  \
+    --set password-attribute:userPassword  \
+    --set "default-password-storage-scheme:Salted SHA-512"  \
+    --set password-generator:Passphrase  \
+    --set "failure-lockout-action:Lock Account"  \
+    --set allowed-password-reset-token-use-condition:account-locked-due-to-admin-reset-timeout  \
+    --set allowed-password-reset-token-use-condition:account-locked-due-to-failures  \
+    --set allowed-password-reset-token-use-condition:account-locked-due-to-idle-time-limit  \
+    --set allowed-password-reset-token-use-condition:account-usable  \
+    --set allowed-password-reset-token-use-condition:password-expired
+
+# Set CIAM password policy as default password policy.
+dsconfig set-global-configuration-prop \
+    --set default-password-policy:ciamDefaultPasswordPolicy
