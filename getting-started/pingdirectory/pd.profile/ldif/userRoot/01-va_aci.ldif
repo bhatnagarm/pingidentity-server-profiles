@@ -1,0 +1,5 @@
+# This file is to add the ACIs, to link the VA Users to the OUs.
+dn: ou=virginaustralia,o=com
+changetype: modify
+add: aci
+aci: (targetattr = "*||+")(version 3.0; acl "Grant full access for the VA Sync User to the virginaustralia OU";allow (all) userdn="ldap:///cn=VA Sync User";)

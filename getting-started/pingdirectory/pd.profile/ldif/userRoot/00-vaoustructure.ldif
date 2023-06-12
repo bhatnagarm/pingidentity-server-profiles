@@ -1,0 +1,24 @@
+###### Root VA CIAM Object. This is the tree that customer identities as well as service/functional accounts will authenticate and be authorised against and where those objects will reside.
+dn: o=com
+changetype: add
+objectclass: top
+objectclass: organization
+o: com
+
+dn: ou=virginaustralia,o=com
+changetype: add
+objectclass: top
+objectclass: organizationalUnit
+ou: virginaustralia
+
+dn: ou=Users,ou=virginaustralia,o=com
+changetype: add
+objectclass: top
+objectclass: organizationalUnit
+ou: Users
+
+dn: ou=ServiceAccounts,ou=virginaustralia,o=com
+changetype: add
+objectclass: top
+objectclass: organizationalUnit
+ou: ServiceAccounts
