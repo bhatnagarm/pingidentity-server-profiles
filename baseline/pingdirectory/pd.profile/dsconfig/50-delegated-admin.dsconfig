@@ -7,7 +7,7 @@ dsconfig create-plugin \
   --set attribute-type:objectClass \
   --set value-pattern:pf-connected-identities \
   --set target-attribute-exists-during-initial-population-behavior:merge-existing-and-composed-values \
-  --set "include-base-dn:dc=example,dc=com" \
+  --set "include-base-dn:ou=virginaustralia,o=com" \
   --set "include-filter:(objectClass=inetOrgPerson)"
 
 dsconfig create-plugin \
@@ -16,7 +16,7 @@ dsconfig create-plugin \
   --set enabled:true \
   --set attribute-type:pf-connected-identity \
   --set "value-pattern:auth-source=pf-local-identity:user-id={uid}" \
-  --set "include-base-dn:dc=example,dc=com" \
+  --set "include-base-dn:ou=virginaustralia,o=com" \
   --set "include-filter:(objectClass=inetOrgPerson)"
 
 #
