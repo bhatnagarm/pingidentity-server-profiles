@@ -109,3 +109,291 @@ userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=auditor
 
 
+dn: uid=0000411212,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 0000411212
+givenName: CIAM
+sn: TESTING
+cn: VJFRXUFKSFIIII MJYMYCNXUQ
+loginAlias: 0000411212
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406376934,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406376934
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406376934
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406286100,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406286100
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406286100
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406286181,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406286181
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406286181
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406286201,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406286201
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406286201
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406286223,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406286223
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406286223
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406287044,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406287044
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406287044
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406287845,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406287845
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406287845
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406287586,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406287586
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406287586
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406287426,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406287426
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406287426
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406285775,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406285775
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406285775
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406284906,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406284906
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406284906
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406287055,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406287055
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406287055
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406284052,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406284052
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406284052
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406288490,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406288490
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406288490
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406288506,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406288506
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406288506
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
+
+dn: uid=1406288565,ou=People,${USER_BASE_DN}
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: ciamIdentity
+uid: 1406288565
+givenName: CIAM
+sn: TESTING
+cn: CIAM TESTING
+loginAlias: 1406288565
+userPassword: Wonder@01
+primaryEmail: CIAMtesting@virginaustralia.com
+primaryMobile: +61481889848
+accountStatus: ACTIVE
+lockedAccount: FALSE
